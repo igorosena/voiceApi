@@ -1,0 +1,6 @@
+Voice API
+Copyright 2026 Igor Sena
+
+This product includes the OmniVoice model code (the `omnivoice/` package),
+Copyright 2026 Xiaomi Corp. and the k2-fsa contributors, licensed under the
+Apache License, Version 2.0: https://github.com/k2-fsa/OmniVoice

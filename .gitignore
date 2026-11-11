@@ -1,0 +1,12 @@
+data/
+.env
+.venv/
+__pycache__/
+*.pyc
+voices_src/
+samples/
+.venv-tools/
+.DS_Store
+.pytest_cache/
+*.mp3
+*.wav

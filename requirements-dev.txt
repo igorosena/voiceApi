@@ -1,0 +1,8 @@
+# Test dependencies. The tests stub the model, so torch is not required.
+fastapi>=0.115,<0.137
+httpx
+python-multipart
+pydantic>=2
+numpy
+soundfile
+pytest

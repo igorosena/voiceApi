@@ -1,0 +1,22 @@
+services:
+  voice-api:
+    build: .
+    image: voice-api:latest
+    container_name: voice-api
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:8000:8000"   # loopback only; put Caddy/Nginx with TLS in front
+    volumes:
+      - voice-data:/data        # voices, encoded prompts and the model cache
+    # NVIDIA GPU. Remove this block to run on CPU.
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  voice-data:
